@@ -2,7 +2,7 @@
 
 public class Chatbot
 {
-    private string name;
+    private string? name;
 
     public void Start()
     {
@@ -18,13 +18,27 @@ public class Chatbot
         Console.Write("What is your name? ");
         name = Console.ReadLine();
 
+        // Ensure name is not null or empty
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            name = "User";
+        }
+
         ChatbotUI.PrintBotResponse("Hello " + name + "! I'm your Digital Guardian in Cyberspace.", useTypingEffect: true, delayMs: 20);
 
         // Chat Loop
         while (true)
         {
-            ChatbotUI.PrintUserPrompt(name);
-            string userInput = Console.ReadLine().ToLower();
+            ChatbotUI.PrintUserPrompt(name!);
+            string? userInput = Console.ReadLine();
+
+            if (userInput == null)
+            {
+                ChatbotUI.PrintBotResponse("Input cannot be null. Please try again.", useTypingEffect: true);
+                continue;
+            }
+
+            userInput = userInput.ToLower();
 
             if (userInput == "exit")
             {
