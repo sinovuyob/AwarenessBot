@@ -17,3 +17,4 @@ Features
  **Personalized Responses** – Remembers and uses your name throughout the conversation
  **Animated Boot Sequence** – Engaging startup with progress bar and status messages
 
+<img width="1297" height="329" alt="image" src="https://github.com/user-attachments/assets/04cb373a-a5fe-435a-babc-10476e2b409e" />
