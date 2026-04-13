@@ -18,7 +18,6 @@ public class Chatbot
         Console.Write("What is your name? ");
         name = Console.ReadLine();
 
-        // Ensure name is not null or empty
         if (string.IsNullOrWhiteSpace(name))
         {
             name = "User";
