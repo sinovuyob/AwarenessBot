@@ -11,11 +11,6 @@ public static class ChatbotUI
 
     public static void PrintWelcomeBanner()
     {
-        // Top border
-        Console.ForegroundColor = ConsoleColor.DarkCyan;
-        Console.WriteLine(new string('═', 80));
-        Console.ResetColor();
-
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine(@"   ___      _                                        _ _             _                                                 ___       _   ");
         Console.ResetColor();
@@ -38,11 +33,6 @@ public static class ChatbotUI
 
         Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.WriteLine(@"      |___/                                                |___/                                                                     ");
-        Console.ResetColor();
-
-        // Bottom border
-        Console.ForegroundColor = ConsoleColor.DarkCyan;
-        Console.WriteLine(new string('═', 80));
         Console.ResetColor();
 
         Console.ForegroundColor = ConsoleColor.Green;
