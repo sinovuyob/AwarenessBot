@@ -58,7 +58,7 @@ public class Chatbot
             {
                 ChatbotUI.PrintBotResponse("My purpose is to educate you, " + name + ", about cybersecurity and how to stay safe online.", useTypingEffect: true);
             }
-            else if (userInput.Contains("what can i ask about you"))
+            else if (userInput.Contains("what can i ask about "))
             {
                 ChatbotUI.PrintBotResponse("Great question, " + name + "! You can ask me about:", useTypingEffect: false);
                 string[] topics = {
